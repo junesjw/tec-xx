@@ -17,6 +17,7 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+          "D:\\Coding\\tec-xx\\tec-xx\\NuGet.Config",
           "C:\\Users\\Junes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -26,7 +27,8 @@
         ],
         "sources": ***REMOVED***
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": ***REMOVED******REMOVED***,
-          "https://api.nuget.org/v3/index.json": ***REMOVED******REMOVED***
+          "https://api.nuget.org/v3/index.json": ***REMOVED******REMOVED***,
+          "https://nuget.emzi0767.com/api/v3/index.json": ***REMOVED******REMOVED***
       ***REMOVED***,
         "frameworks": ***REMOVED***
           "netcoreapp3.1": ***REMOVED***
