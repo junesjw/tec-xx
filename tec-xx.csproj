@@ -275,6 +275,9 @@
     <None Update="HeadIcons\ZeroSuitSamusHeadSSBUWebsite.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="NuGet.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
