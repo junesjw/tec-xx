@@ -110,7 +110,25 @@ namespace tec_xx.Commands
           ***REMOVED***
             catch (Exception e)
             ***REMOVED***
-                Console.WriteLine(e);
+                string path = Path.Combine(Assembly.GetEntryAssembly().Location, "Debug.txt");
+
+                if (!File.Exists(path))
+                ***REMOVED***
+                    File.Create(path).Dispose();
+
+                    using (TextWriter tw = new StreamWriter(path))
+                    ***REMOVED***
+                        tw.WriteLine(e);
+                  ***REMOVED***
+              ***REMOVED***
+                else
+                ***REMOVED***
+                    using (TextWriter tw = new StreamWriter(path))
+                    ***REMOVED***
+                        tw.WriteLine(e);
+                  ***REMOVED***
+              ***REMOVED***
+
           ***REMOVED***
       ***REMOVED***
 
