@@ -1,6 +1,5 @@
 ﻿using Dapper;
 using System.Data.SQLite;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Reflection;
@@ -54,6 +53,7 @@ namespace tec_xx
 
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             ***REMOVED***
+                connection.Open();
                 var exists = await connection.ExecuteScalarAsync<bool>(sql);
 
                 return exists;

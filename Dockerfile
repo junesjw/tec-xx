@@ -15,4 +15,5 @@ WORKDIR /app
 COPY --from=build-env /app/out .
 
 COPY config.json ./
+COPY App.config ./
 ENTRYPOINT ["dotnet", "tec-xx.dll"]
