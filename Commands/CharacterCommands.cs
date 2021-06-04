@@ -19,7 +19,6 @@ namespace tec_xx.Commands
         private const string footer = "The tips were given by Junes#9469 and/or Labrys#4412 on Discord.\nPlease contact us or the mod team if you have any suggestions!";
         private const string pastebin = "https://pastebin.com/8Aw08aBv";
 
-
         [Command("vs")]
         public async Task SendMatchUpTips(CommandContext ctx, string character)
         ***REMOVED***
