@@ -13,12 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="tec-xx.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="App.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -41,6 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Aliases.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="HeadIcons\BanjoAndKazooieHeadSSBUWebsite.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -271,6 +268,9 @@
     </None>
     <None Update="HeadIcons\ZeroSuitSamusHeadSSBUWebsite.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="MatchupAdvice.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -16,4 +16,6 @@ COPY --from=build-env /app/out .
 
 COPY config.json ./
 COPY App.config ./
+COPY Aliases.json ./
+COPY MatchupAdvice.json ./
 ENTRYPOINT ["dotnet", "tec-xx.dll"]
