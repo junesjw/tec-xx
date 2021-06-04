@@ -23,7 +23,6 @@ namespace tec_xx.Commands
         [Command("vs")]
         public async Task SendMatchUpTips(CommandContext ctx, string character)
         ***REMOVED***
-
             var headIconFileName = new List<string>();
             var advice = new MatchupAdvice();
             var alias = new Aliases();
