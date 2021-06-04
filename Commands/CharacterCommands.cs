@@ -42,6 +42,7 @@ namespace tec_xx.Commands
                 if (alias != null)
                 ***REMOVED***
                     advice = advices.Find(x => x.Character == alias.Character);
+                    character = advice.Character;
               ***REMOVED***
                 else
                 ***REMOVED***
