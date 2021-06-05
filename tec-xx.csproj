@@ -167,7 +167,7 @@
     <None Update="HeadIcons\OlimarHeadSSBUWebsite.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="HeadIcons\Pac-ManHeadSSBUWebsite.png">
+    <None Update="HeadIcons\PacManHeadSSBUWebsite.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="HeadIcons\PalutenaHeadSSBUWebsite.png">
