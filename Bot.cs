@@ -24,14 +24,15 @@ namespace tec_xx
 
         public async Task RunAsync()
         ***REMOVED***
-            var json = string.Empty;
-            var configJson = JsonConvert.DeserializeObject<ConfigJson>(json);
+            var json = string.Empty;         
 
             using (var fs = File.OpenRead("config.json"))
             ***REMOVED***
                 using var sr = new StreamReader(fs, new UTF8Encoding(false));
                 json = await sr.ReadToEndAsync().ConfigureAwait(false);
           ***REMOVED***
+
+            var configJson = JsonConvert.DeserializeObject<ConfigJson>(json);
 
             var config = new DiscordConfiguration
             ***REMOVED***
