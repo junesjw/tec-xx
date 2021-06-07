@@ -29,6 +29,8 @@ namespace tec_xx
 
         public async Task RunAsync()
         ***REMOVED***
+            Console.WriteLine("hi");
+
             var json = string.Empty;         
 
             using (var fs = File.OpenRead("config.json"))
@@ -78,27 +80,33 @@ namespace tec_xx
 
         private async Task WelcomeMessage(DiscordClient sender, GuildMemberAddEventArgs e)
         ***REMOVED***
-            DiscordGuild guild = await Client.GetGuildAsync(689975663339634736);
-
-            var channel = guild.GetChannel(689975663339634897);
-            var welcomeMsgs = new List<string>();
-
-            using (StreamReader reader = new StreamReader("WelcomeMessages.txt"))
+            try
             ***REMOVED***
-                string line;
+                DiscordGuild guild = await Client.GetGuildAsync(689975663339634736);
 
-                while ((line = reader.ReadLine()) != null)
+                var channel = guild.GetChannel(689975663339634897);
+                var welcomeMsgs = new List<string>();
+
+                using (StreamReader reader = new StreamReader("WelcomeMessages.txt"))
                 ***REMOVED***
-                    welcomeMsgs.Add(line);
+                    string line;
+
+                    while ((line = reader.ReadLine()) != null)
+                    ***REMOVED***
+                        welcomeMsgs.Add(line);
+                  ***REMOVED***
               ***REMOVED***
+
+                int r = rnd.Next(welcomeMsgs.Count);
+
+                var msg = await new DiscordMessageBuilder()
+                    .WithContent($"***REMOVED***e.Member.Mention***REMOVED*** ***REMOVED***welcomeMsgs[r]***REMOVED***")
+                    .SendAsync(channel);
           ***REMOVED***
-
-            int r = rnd.Next(welcomeMsgs.Count);
-
-            var msg = new DiscordMessageBuilder()
-                .WithContent($"✔ UserMention(user): ***REMOVED***e.Member.Mention***REMOVED*** ***REMOVED***welcomeMsgs[r]***REMOVED***")
-                .WithAllowedMentions(new IMention[] ***REMOVED*** new UserMention(e.Member)***REMOVED***)
-                .SendAsync(channel);
+            catch (Exception err)
+            ***REMOVED***
+                Console.WriteLine(err);
+          ***REMOVED***
       ***REMOVED***
 
         private Task OnClientReady(DiscordClient client, ReadyEventArgs e)
