@@ -96,7 +96,8 @@ namespace tec_xx
             int r = rnd.Next(welcomeMsgs.Count);
 
             var msg = new DiscordMessageBuilder()
-                .WithContent($"***REMOVED***e.Member.Mention***REMOVED*** ***REMOVED***welcomeMsgs[r]***REMOVED***")
+                .WithContent($"✔ UserMention(user): ***REMOVED***e.Member.Mention***REMOVED*** ***REMOVED***welcomeMsgs[r]***REMOVED***")
+                .WithAllowedMentions(new IMention[] ***REMOVED*** new UserMention(e.Member)***REMOVED***)
                 .SendAsync(channel);
       ***REMOVED***
 
