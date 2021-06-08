@@ -19,4 +19,5 @@ COPY App.config ./
 COPY Aliases.json ./
 COPY MatchupAdvice.json ./
 COPY WelcomeMessages.txt ./
+COPY JoinedMessage.txt ./
 ENTRYPOINT ["dotnet", "tec-xx.dll"]

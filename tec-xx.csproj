@@ -269,6 +269,9 @@
     <None Update="HeadIcons\ZeroSuitSamusHeadSSBUWebsite.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="JoinedMessage.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="MatchupAdvice.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

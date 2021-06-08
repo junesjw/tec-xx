@@ -23,9 +23,9 @@ namespace tec_xx
 
         private Timer timer;
 
-        static Random rnd = new Random();
+        static Random rndWelcome = new Random();
 
-        private DiscordChannel lounge;
+        static Random rndJoined = new Random();
 
         public async Task RunAsync()
         ***REMOVED***
@@ -43,6 +43,7 @@ namespace tec_xx
 
             var config = new DiscordConfiguration
             ***REMOVED***
+                Intents = DiscordIntents.All,
                 Token = configJson.Token,
                 TokenType = TokenType.Bot,
                 AutoReconnect = true,
@@ -80,33 +81,40 @@ namespace tec_xx
 
         private async Task WelcomeMessage(DiscordClient sender, GuildMemberAddEventArgs e)
         ***REMOVED***
-            try
+            DiscordGuild guild = await Client.GetGuildAsync(125318974136123392);
+
+            var channel = guild.GetChannel(125318974136123392);
+
+            var welcomeMsgs = new List<string>();
+            var joinMsgs = new List<string>();
+
+            using (StreamReader reader = new StreamReader("WelcomeMessages.txt"))
             ***REMOVED***
-                DiscordGuild guild = await Client.GetGuildAsync(689975663339634736);
+                string line;
 
-                var channel = guild.GetChannel(689975663339634897);
-                var welcomeMsgs = new List<string>();
-
-                using (StreamReader reader = new StreamReader("WelcomeMessages.txt"))
+                while ((line = reader.ReadLine()) != null)
                 ***REMOVED***
-                    string line;
-
-                    while ((line = reader.ReadLine()) != null)
-                    ***REMOVED***
-                        welcomeMsgs.Add(line);
-                  ***REMOVED***
+                    welcomeMsgs.Add(line);
               ***REMOVED***
-
-                int r = rnd.Next(welcomeMsgs.Count);
-
-                var msg = await new DiscordMessageBuilder()
-                    .WithContent($"***REMOVED***e.Member.Mention***REMOVED*** ***REMOVED***welcomeMsgs[r]***REMOVED***")
-                    .SendAsync(channel);
           ***REMOVED***
-            catch (Exception err)
+
+            using (StreamReader reader = new StreamReader("JoinedMessage.txt"))
             ***REMOVED***
-                Console.WriteLine(err);
+                string line;
+
+                while ((line = reader.ReadLine()) != null)
+                ***REMOVED***
+                    joinMsgs.Add(line);
+              ***REMOVED***
           ***REMOVED***
+
+            int w = rndWelcome.Next(welcomeMsgs.Count);
+
+            int j = rndJoined.Next(joinMsgs.Count);
+
+            var msg = await new DiscordMessageBuilder()
+                .WithContent($"***REMOVED***e.Member.Mention***REMOVED*** ***REMOVED***joinMsgs[j]***REMOVED***! ***REMOVED***welcomeMsgs[w]***REMOVED***")
+                .SendAsync(channel);
       ***REMOVED***
 
         private Task OnClientReady(DiscordClient client, ReadyEventArgs e)
