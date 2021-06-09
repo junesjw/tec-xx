@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
+using System;
 
 namespace tec_xx.Commands
 ***REMOVED***
@@ -55,20 +56,27 @@ namespace tec_xx.Commands
 
             string headIconDirectory = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "HeadIcons");
 
-            // Robin already contains the word "rob" so I'm hardcoding it
-            if (!string.Equals(character, "rob") && !string.Equals(character, "samus"))
+            try
             ***REMOVED***
-                headIconFileName = Directory.GetFiles(headIconDirectory).Where(s => s.ToLower().Contains(character)).ToList();
+                // Robin already contains the word "rob" so I'm hardcoding it
+                if (!string.Equals(character, "rob") && !string.Equals(character, "samus"))
+                ***REMOVED***
+                    headIconFileName = Directory.GetFiles(headIconDirectory).Where(s => s.ToLower().Contains(character)).ToList();
+              ***REMOVED***
+                else if (string.Equals(character, "rob"))
+                ***REMOVED***
+                    headIconFileName.Add(string.Concat(headIconDirectory, @"\ROBHeadSSBUWebsite.png"));
+              ***REMOVED***
+                else if (string.Equals(character, "samus"))
+                ***REMOVED***
+                    headIconFileName.Add(string.Concat(headIconDirectory, @"\SamusHeadSSBUWebsite.png"));
+              ***REMOVED***
+
           ***REMOVED***
-            else if (string.Equals(character, "rob"))
+            catch (System.Exception e)
             ***REMOVED***
-                headIconFileName.Add(string.Concat(headIconDirectory, @"\ROBHeadSSBUWebsite.png"));
-          ***REMOVED***             
-            else if (string.Equals(character, "samus"))
-            ***REMOVED***
-                headIconFileName.Add(string.Concat(headIconDirectory, @"\SamusHeadSSBUWebsite.png"));
-          ***REMOVED***
-                           
+                Console.WriteLine(e);
+          ***REMOVED*** 
 
             using (var fs = new FileStream(headIconFileName[0], FileMode.Open))
             ***REMOVED***

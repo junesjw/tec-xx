@@ -272,6 +272,9 @@
     <None Update="JoinedMessage.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="MatchupAdvice.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="WelcomeMessages.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
