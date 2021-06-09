@@ -23,43 +23,43 @@ namespace tec_xx.Commands
         [Command("vs")]
         public async Task SendMatchUpTips(CommandContext ctx, string character)
         ***REMOVED***
-            var headIconFileName = new List<string>();
-            var advice = new MatchupAdvice();
-            var alias = new Aliases();
-
-            var advices = JsonConvert.DeserializeObject<List<MatchupAdvice>>(File.ReadAllText("MatchupAdvice.json"));
-            var aliases = JsonConvert.DeserializeObject<List<Aliases>>(File.ReadAllText("Aliases.json"));
-
-            character = character.ToLower();
-
-            advice = advices.Find(x => x.Character == character);
-
-            if (advice == null)
-            ***REMOVED***
-                alias = aliases.Find(x => x.Alias == character);
-
-                if (alias != null)
-                ***REMOVED***
-                    advice = advices.Find(x => x.Character == alias.Character);
-                    character = advice.Character;
-              ***REMOVED***
-                else
-                ***REMOVED***
-                    var msg = new DiscordMessageBuilder()
-                        .WithContent($"You didn't enter a valid character argument. \n For a comprehensive list about all character commands, please see this ***REMOVED***pastebin***REMOVED*** link.")
-                        .SendAsync(ctx.Channel);
-
-                    return;
-              ***REMOVED***
-
-          ***REMOVED***
-
-            string headIconDirectory = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "HeadIcons");
-
             try
             ***REMOVED***
+                var headIconFileName = new List<string>();
+                var advice = new MatchupAdvice();
+                var alias = new Aliases();
+
+                var advices = JsonConvert.DeserializeObject<List<MatchupAdvice>>(File.ReadAllText("MatchupAdvice.json"));
+                var aliases = JsonConvert.DeserializeObject<List<Aliases>>(File.ReadAllText("Aliases.json"));
+
+                character = character.ToLower();
+
+                advice = advices.Find(x => x.Character == character);
+
+                if (advice == null)
+                ***REMOVED***
+                    alias = aliases.Find(x => x.Alias == character);
+
+                    if (alias != null)
+                    ***REMOVED***
+                        advice = advices.Find(x => x.Character == alias.Character);
+                        character = advice.Character;
+                  ***REMOVED***
+                    else
+                    ***REMOVED***
+                        var msg = new DiscordMessageBuilder()
+                            .WithContent($"You didn't enter a valid character argument. \n For a comprehensive list about all character commands, please see this ***REMOVED***pastebin***REMOVED*** link.")
+                            .SendAsync(ctx.Channel);
+
+                        return;
+                  ***REMOVED***
+
+              ***REMOVED***
+
+                string headIconDirectory = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "HeadIcons");
+
                 // Robin already contains the word "rob" so I'm hardcoding it
-                if (!string.Equals(character, "rob") && !string.Equals(character, "samus"))
+                if (!string.Equals(character, "rob") || !string.Equals(character, "samus"))
                 ***REMOVED***
                     headIconFileName = Directory.GetFiles(headIconDirectory).Where(s => s.ToLower().Contains(character)).ToList();
               ***REMOVED***
@@ -72,61 +72,60 @@ namespace tec_xx.Commands
                     headIconFileName.Add(string.Concat(headIconDirectory, @"\SamusHeadSSBUWebsite.png"));
               ***REMOVED***
 
+                using (var fs = new FileStream(headIconFileName[0], FileMode.Open))
+                ***REMOVED***
+                    var embed = new DiscordEmbedBuilder
+                    ***REMOVED***
+                        Title = $"Dr. Mario vs. ***REMOVED***advice.Title***REMOVED***",
+                        Url = docStop,
+                        Author = new DiscordEmbedBuilder.EmbedAuthor
+                        ***REMOVED***
+                            IconUrl = docHeadUrl,
+                            Name = author
+                      ***REMOVED***,
+                        Footer = new DiscordEmbedBuilder.EmbedFooter
+                        ***REMOVED***
+                            IconUrl = docHeadUrl,
+                            Text = footer
+                      ***REMOVED***,
+                        Thumbnail = new DiscordEmbedBuilder.EmbedThumbnail
+                        ***REMOVED***
+                            Url = $"attachment://***REMOVED***Path.GetFileName(headIconFileName[0])***REMOVED***"
+                      ***REMOVED***,
+
+                        Color = new Optional<DiscordColor>(new DiscordColor(advice.Color)),
+                  ***REMOVED***;
+
+                    if (!string.IsNullOrEmpty(advice.SecondaryNotes))
+                    ***REMOVED***
+                        string[] notesTitles = ReturnNotesTitle(advice);
+
+                        embed.AddField(notesTitles[0], BuildNotes(advice));
+
+                        embed.AddField(notesTitles[1], string.Concat("```\n", advice.SecondaryNotes, "```"));
+
+                        if (!string.IsNullOrEmpty(advice.TertiaryNotes))
+                            embed.AddField(notesTitles[2], string.Concat("```\n", advice.TertiaryNotes, "```"));
+                  ***REMOVED***
+                    else
+                    ***REMOVED***
+                        embed.AddField("Notes", BuildNotes(advice));
+                  ***REMOVED***
+
+                    embed.AddField("Stages (ordered from best to worst)", BuildStages(advice));
+                    embed.AddField("Documents", BuildOtherFields(advice.Document));
+                    embed.AddField("Videos", BuildOtherFields(advice.Video));
+                    embed.AddField("Other", BuildOtherFields(advice.Other));
+
+                    var msg = await new DiscordMessageBuilder()
+                            .WithEmbed(embed)
+                            .WithFiles(new Dictionary<string, Stream>() ***REMOVED*** ***REMOVED*** $"***REMOVED***Path.GetFileName(headIconFileName[0])***REMOVED***", fs ***REMOVED*** ***REMOVED***)
+                            .SendAsync(ctx.Channel);
+              ***REMOVED***
           ***REMOVED***
-            catch (System.Exception e)
+            catch (Exception e)
             ***REMOVED***
                 Console.WriteLine(e);
-          ***REMOVED*** 
-
-            using (var fs = new FileStream(headIconFileName[0], FileMode.Open))
-            ***REMOVED***
-                var embed = new DiscordEmbedBuilder
-                ***REMOVED***
-                    Title = $"Dr. Mario vs. ***REMOVED***advice.Title***REMOVED***",
-                    Url = docStop,
-                    Author = new DiscordEmbedBuilder.EmbedAuthor
-                    ***REMOVED***
-                        IconUrl = docHeadUrl,
-                        Name = author
-                  ***REMOVED***,
-                    Footer = new DiscordEmbedBuilder.EmbedFooter
-                    ***REMOVED***
-                        IconUrl = docHeadUrl,
-                        Text = footer
-                  ***REMOVED***,
-                    Thumbnail = new DiscordEmbedBuilder.EmbedThumbnail
-                    ***REMOVED***
-                        Url = $"attachment://***REMOVED***Path.GetFileName(headIconFileName[0])***REMOVED***"
-                  ***REMOVED***,
-
-                    Color = new Optional<DiscordColor>(new DiscordColor(advice.Color)),
-              ***REMOVED***;
-
-                if (!string.IsNullOrEmpty(advice.SecondaryNotes))
-                ***REMOVED***
-                    string[] notesTitles = ReturnNotesTitle(advice);
-
-                    embed.AddField(notesTitles[0], BuildNotes(advice));
-
-                    embed.AddField(notesTitles[1], string.Concat("```\n", advice.SecondaryNotes, "```"));
-
-                    if (!string.IsNullOrEmpty(advice.TertiaryNotes))
-                        embed.AddField(notesTitles[2], string.Concat("```\n", advice.TertiaryNotes, "```"));
-              ***REMOVED***
-                else
-                ***REMOVED***
-                    embed.AddField("Notes", BuildNotes(advice));
-              ***REMOVED***
-
-                embed.AddField("Stages (ordered from best to worst)", BuildStages(advice));
-                embed.AddField("Documents", BuildOtherFields(advice.Document));
-                embed.AddField("Videos", BuildOtherFields(advice.Video));
-                embed.AddField("Other", BuildOtherFields(advice.Other));
-
-                var msg = await new DiscordMessageBuilder()
-                        .WithEmbed(embed)
-                        .WithFiles(new Dictionary<string, Stream>() ***REMOVED*** ***REMOVED*** $"***REMOVED***Path.GetFileName(headIconFileName[0])***REMOVED***", fs ***REMOVED*** ***REMOVED***)
-                        .SendAsync(ctx.Channel);
           ***REMOVED***
 
       ***REMOVED***
