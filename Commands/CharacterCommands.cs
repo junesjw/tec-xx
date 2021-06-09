@@ -65,11 +65,11 @@ namespace tec_xx.Commands
               ***REMOVED***
                 else if (string.Equals(character, "rob"))
                 ***REMOVED***
-                    headIconFileName.Add(string.Concat(headIconDirectory, @"\ROBHeadSSBUWebsite.png"));
+                    headIconFileName.Add(string.Concat(headIconDirectory, @"/ROBHeadSSBUWebsite.png"));
               ***REMOVED***
                 else if (string.Equals(character, "samus"))
                 ***REMOVED***
-                    headIconFileName.Add(string.Concat(headIconDirectory, @"\SamusHeadSSBUWebsite.png"));
+                    headIconFileName.Add(string.Concat(headIconDirectory, @"/SamusHeadSSBUWebsite.png"));
               ***REMOVED***
 
                 using (var fs = new FileStream(headIconFileName[0], FileMode.Open))
