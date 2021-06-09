@@ -59,7 +59,7 @@ namespace tec_xx.Commands
                 string headIconDirectory = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "HeadIcons");
 
                 // Robin already contains the word "rob" so I'm hardcoding it
-                if (!string.Equals(character, "rob") || !string.Equals(character, "samus"))
+                if (!string.Equals(character, "rob") && !string.Equals(character, "samus"))
                 ***REMOVED***
                     headIconFileName = Directory.GetFiles(headIconDirectory).Where(s => s.ToLower().Contains(character)).ToList();
               ***REMOVED***
