@@ -83,7 +83,7 @@ namespace tec_xx
         ***REMOVED***
             DiscordGuild guild = await Client.GetGuildAsync(125318974136123392);
 
-            var channel = guild.GetChannel(125318974136123392);
+            var channel = guild.GetChannel(853614311166967819);
 
             var welcomeMsgs = new List<string>();
             var joinMsgs = new List<string>();
