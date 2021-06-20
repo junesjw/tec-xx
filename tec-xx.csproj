@@ -36,7 +36,7 @@
 
   <ItemGroup>
     <None Update="Aliases.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="HeadIcons\BanjoAndKazooieHeadSSBUWebsite.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -273,7 +273,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="MatchupAdvice.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="WelcomeMessages.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

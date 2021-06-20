@@ -59,17 +59,21 @@ namespace tec_xx.Commands
                 string headIconDirectory = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "HeadIcons");
 
                 // Robin already contains the word "rob" so I'm hardcoding it
-                if (!string.Equals(character, "rob") && !string.Equals(character, "samus"))
-                ***REMOVED***
-                    headIconFileName = Directory.GetFiles(headIconDirectory).Where(s => s.ToLower().Contains(character)).ToList();
-              ***REMOVED***
-                else if (string.Equals(character, "rob"))
+                if (string.Equals(character, "rob"))
                 ***REMOVED***
                     headIconFileName.Add(string.Concat(headIconDirectory, @"/ROBHeadSSBUWebsite.png"));
               ***REMOVED***
                 else if (string.Equals(character, "samus"))
                 ***REMOVED***
                     headIconFileName.Add(string.Concat(headIconDirectory, @"/SamusHeadSSBUWebsite.png"));
+              ***REMOVED***
+                else if (string.Equals(character, "falco"))
+                ***REMOVED***
+                    headIconFileName.Add(string.Concat(headIconDirectory, @"/FalcoHeadSSBUWebsite.png"));
+              ***REMOVED***
+                else
+                ***REMOVED***
+                    headIconFileName = Directory.GetFiles(headIconDirectory).Where(s => s.ToLower().Contains(character)).ToList();
               ***REMOVED***
 
                 using (var fs = new FileStream(headIconFileName[0], FileMode.Open))
