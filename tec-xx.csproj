@@ -275,6 +275,9 @@
     <None Update="MatchupAdvice.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="PlaylistLinks.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="WelcomeMessages.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

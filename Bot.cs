@@ -23,14 +23,14 @@ namespace tec_xx
 
         private Timer timer;
 
+        private List<string> playlistLinks = new List<string>();
+
         static Random rndWelcome = new Random();
 
         static Random rndJoined = new Random();
 
         public async Task RunAsync()
         ***REMOVED***
-            Console.WriteLine("hi");
-
             var json = string.Empty;         
 
             using (var fs = File.OpenRead("config.json"))
@@ -117,9 +117,30 @@ namespace tec_xx
                 .SendAsync(channel);
       ***REMOVED***
 
+        private async Task CheckForNewVideosInPlaylist()
+        ***REMOVED***
+            foreach (string link in playlistLinks)
+            ***REMOVED***
+
+          ***REMOVED***
+      ***REMOVED***
+
         private Task OnClientReady(DiscordClient client, ReadyEventArgs e)
         ***REMOVED***
+            //const Int32 bufferSize = 128;
+
+            //using (var fileStream = File.OpenRead("PlaylistLinks.txt"))
+            //***REMOVED***
+            //    using (var streamReader = new StreamReader(fileStream, Encoding.UTF8, true, bufferSize))
+            //    ***REMOVED***
+            //        string line;
+            //        while ((line = streamReader.ReadLine()) != null)
+            //            playlistLinks.Add(line);
+            //  ***REMOVED***
+            //***REMOVED***
+
             timer.Start();
+
             return Task.CompletedTask;
       ***REMOVED***
 
