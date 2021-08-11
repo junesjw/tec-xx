@@ -58,6 +58,8 @@ namespace tec_xx.Commands
 
                 string headIconDirectory = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "HeadIcons");
 
+                Console.WriteLine(character);
+
                 // Robin already contains the word "rob"
                 if (string.Equals(character, "rob"))
                 ***REMOVED***
@@ -74,6 +76,7 @@ namespace tec_xx.Commands
                 else if (string.Equals(character, "bowser"))
                 ***REMOVED***
                     headIconFileName.Add(string.Concat(headIconDirectory, @"/BowserHeadSSBUWebsite.png"));
+                    Console.WriteLine("Hi");
               ***REMOVED***
                 else
                 ***REMOVED***
