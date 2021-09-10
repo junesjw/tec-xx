@@ -76,7 +76,7 @@ namespace tec_xx.Commands
                 else if (string.Equals(character, "bowser"))
                 ***REMOVED***
                     headIconFileName.Add(string.Concat(headIconDirectory, @"/BowserHeadSSBUWebsite.png"));
-                    Console.WriteLine("Hi");
+
               ***REMOVED***
                 else
                 ***REMOVED***

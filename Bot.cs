@@ -58,7 +58,6 @@ namespace tec_xx
 
             Client = new DiscordClient(config);
             Client.Ready += OnClientReady;
-            Client.GuildMemberAdded += WelcomeMessage;
 
             timer.Elapsed += SetActivityStatus;
             
@@ -77,44 +76,6 @@ namespace tec_xx
             await Client.ConnectAsync();
 
             await Task.Delay(-1);
-      ***REMOVED***
-
-        private async Task WelcomeMessage(DiscordClient sender, GuildMemberAddEventArgs e)
-        ***REMOVED***
-            DiscordGuild guild = await Client.GetGuildAsync(125318974136123392);
-
-            var channel = guild.GetChannel(853614311166967819);
-
-            var welcomeMsgs = new List<string>();
-            var joinMsgs = new List<string>();
-
-            using (StreamReader reader = new StreamReader("WelcomeMessages.txt"))
-            ***REMOVED***
-                string line;
-
-                while ((line = reader.ReadLine()) != null)
-                ***REMOVED***
-                    welcomeMsgs.Add(line);
-              ***REMOVED***
-          ***REMOVED***
-
-            using (StreamReader reader = new StreamReader("JoinedMessage.txt"))
-            ***REMOVED***
-                string line;
-
-                while ((line = reader.ReadLine()) != null)
-                ***REMOVED***
-                    joinMsgs.Add(line);
-              ***REMOVED***
-          ***REMOVED***
-
-            int w = rndWelcome.Next(welcomeMsgs.Count);
-
-            int j = rndJoined.Next(joinMsgs.Count);
-
-            var msg = await new DiscordMessageBuilder()
-                .WithContent($"***REMOVED***e.Member.Mention***REMOVED*** ***REMOVED***joinMsgs[j]***REMOVED***! ***REMOVED***welcomeMsgs[w]***REMOVED***")
-                .SendAsync(channel);
       ***REMOVED***
 
         private async Task CheckForNewVideosInPlaylist()
