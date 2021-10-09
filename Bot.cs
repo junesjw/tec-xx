@@ -308,7 +308,7 @@ namespace tec_xx
             theyThem = Client.Guilds[125318974136123392].GetRole(891395850692091998);
             #endregion
 
-            flairChannel = Client.Guilds[125318974136123392].GetChannel(657645609775267850);
+            flairChannel = Client.Guilds[125318974136123392].GetChannel(202114898191319040);
 
             await SendMainRoleSelectMessage();
             await SendMatchmakingRoleMessage();
