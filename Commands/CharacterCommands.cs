@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 using System;
+using DSharpPlus.Exceptions;
+using DSharpPlus.EventArgs;
 
 namespace tec_xx.Commands
 ***REMOVED***
