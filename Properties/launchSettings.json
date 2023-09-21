@@ -1,8 +1,8 @@
-***REMOVED***
-  "profiles": ***REMOVED***
-    "tec-xx": ***REMOVED***
+{
+  "profiles": {
+    "tec-xx": {
       "commandName": "Project",
       "remoteDebugEnabled": false
-  ***REMOVED***
-***REMOVED***
-***REMOVED***
+    }
+  }
+}

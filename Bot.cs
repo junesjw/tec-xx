@@ -12,9 +12,9 @@ using System.Timers;
 using tec_xx.Commands;
 
 namespace tec_xx
-***REMOVED***
+{
     public class Bot
-    ***REMOVED***
+    {
         #region Roles
         private DiscordRole pillTossers;
         private DiscordRole medSchoolStudents;
@@ -41,10 +41,10 @@ namespace tec_xx
 
         private static DiscordChannel flairChannel;
 
-        public DiscordClient Client ***REMOVED*** get; private set; ***REMOVED***
-        public CommandsNextExtension Commands ***REMOVED*** get; private set; ***REMOVED***
+        public DiscordClient Client { get; private set; }
+        public CommandsNextExtension Commands { get; private set; }
 
-        private static string[] activityMessages = new string[4] ***REMOVED*** "Dreaming in digital", "Living in realtime", "Thinking in binary", "Talking in IP" ***REMOVED***;
+        private static string[] activityMessages = new string[4] { "Dreaming in digital", "Living in realtime", "Thinking in binary", "Talking in IP" };
 
         private Timer timer;
 
@@ -55,31 +55,31 @@ namespace tec_xx
         private static Random rndJoined = new Random();
 
         public async Task RunAsync()
-        ***REMOVED***
+        {
             var json = string.Empty;
 
             using (var fs = File.OpenRead("config.json"))
-            ***REMOVED***
+            {
                 using var sr = new StreamReader(fs, new UTF8Encoding(false));
                 json = await sr.ReadToEndAsync().ConfigureAwait(false);
-          ***REMOVED***
+            }
 
             var configJson = JsonConvert.DeserializeObject<ConfigJson>(json);
 
             var config = new DiscordConfiguration
-            ***REMOVED***
+            {
                 Intents = DiscordIntents.All,
                 Token = configJson.Token,
                 TokenType = TokenType.Bot,
                 AutoReconnect = true,
                 MinimumLogLevel = Microsoft.Extensions.Logging.LogLevel.Debug,
-          ***REMOVED***;
+            };
 
             timer = new Timer()
-            ***REMOVED***
+            {
                 AutoReset = true,
                 Interval = 10000
-          ***REMOVED***;
+            };
 
             Client = new DiscordClient(config);
             Client.GuildAvailable += OnClientReady;
@@ -90,12 +90,12 @@ namespace tec_xx
             timer.Elapsed += SetActivityStatus;
 
             var commandsConfig = new CommandsNextConfiguration
-            ***REMOVED***
-                StringPrefixes = new string[] ***REMOVED*** configJson.Prefix ***REMOVED***,
+            {
+                StringPrefixes = new string[] { configJson.Prefix },
                 EnableDms = false,
                 EnableMentionPrefix = true,
                 DmHelp = true,
-          ***REMOVED***;
+            };
 
             Commands = Client.UseCommandsNext(commandsConfig);
 
@@ -104,22 +104,22 @@ namespace tec_xx
             await Client.ConnectAsync();
 
             await Task.Delay(-1);
-      ***REMOVED***
+        }
 
         private async Task AssignRoles(DiscordClient sender, ComponentInteractionCreateEventArgs e)
-        ***REMOVED***
+        {
             await e.Interaction.CreateResponseAsync(InteractionResponseType.DeferredMessageUpdate);
 
             var member = e.Guild.Members[e.User.Id];
 
             if (e.Values.Length > 0)
-            ***REMOVED***
+            {
                 if (e.Values[0].StartsWith("mr"))
-                ***REMOVED***
+                {
                     await ClearMainRoles(member);
 
                     switch (e.Values[0])
-                    ***REMOVED***
+                    {
                         case "mr_mains":
                             await member.GrantRoleAsync(pillTossers);
                             break;
@@ -129,16 +129,16 @@ namespace tec_xx
                         case "mr_visitors":
                             await member.GrantRoleAsync(patients);
                             break;
-                  ***REMOVED***
-              ***REMOVED***
+                    }
+                }
                 else if (e.Values[0].StartsWith("mk"))
-                ***REMOVED***
+                {
                     await ClearMatchmakingRoles(member);
 
                     foreach (var val in e.Values)
-                    ***REMOVED***
+                    {
                         switch (val)
-                        ***REMOVED***
+                        {
                             case "mk_northAmerica":
                                 await member.GrantRoleAsync(northAmerica);
                                 break;
@@ -151,17 +151,17 @@ namespace tec_xx
                             case "mk_southCentralAmerica":
                                 await member.GrantRoleAsync(southCentralAmerica);
                                 break;
-                      ***REMOVED***
-                  ***REMOVED***
-              ***REMOVED***
+                        }
+                    }
+                }
                 else if (e.Values[0].StartsWith("alt"))
-                ***REMOVED***
+                {
                     await ClearAltRoles(member);
 
                     foreach (var val in e.Values)
-                    ***REMOVED***
+                    {
                         switch (val)
-                        ***REMOVED***
+                        {
                             case "alt_white":
                                 await member.GrantRoleAsync(whiteAlt);
                                 break;
@@ -186,15 +186,15 @@ namespace tec_xx
                             case "alt_purple":
                                 await member.GrantRoleAsync(purpleAlt);
                                 break;
-                      ***REMOVED***
-                  ***REMOVED***
-              ***REMOVED***
+                        }
+                    }
+                }
                 else if (e.Values[0].StartsWith("pr"))
-                ***REMOVED***
+                {
                     await ClearPronounsRoles(member);
 
                     switch (e.Values[0])
-                    ***REMOVED***
+                    {
                         case "pr_him":
                             await member.GrantRoleAsync(heHim);
                             break;
@@ -204,13 +204,13 @@ namespace tec_xx
                         case "pr_them":
                             await member.GrantRoleAsync(theyThem);
                             break;
-                  ***REMOVED***
-              ***REMOVED*** 
-          ***REMOVED***
+                    }
+                } 
+            }
             else
-            ***REMOVED***
+            {
                 switch (e.Id)
-                ***REMOVED***
+                {
                     case "dropdownRoleSelect":
                         await ClearMainRoles(member);
                         break;
@@ -223,27 +223,27 @@ namespace tec_xx
                     case "dropdownPronounsSelect":
                         await ClearPronounsRoles(member);
                         break;
-              ***REMOVED***
-          ***REMOVED***
-      ***REMOVED***
+                }
+            }
+        }
 
         private async Task ClearMainRoles(DiscordMember member)
-        ***REMOVED***
+        {
             await member.RevokeRoleAsync(pillTossers);
             await member.RevokeRoleAsync(medSchoolStudents);
             await member.RevokeRoleAsync(patients);
-      ***REMOVED***
+        }
 
         private async Task ClearMatchmakingRoles(DiscordMember member)
-        ***REMOVED***
+        {
             await member.RevokeRoleAsync(northAmerica);
             await member.RevokeRoleAsync(europe);
             await member.RevokeRoleAsync(asiaAustralia);
             await member.RevokeRoleAsync(southCentralAmerica);
-      ***REMOVED***
+        }
 
         private async Task ClearAltRoles(DiscordMember member)
-        ***REMOVED***
+        {
             await member.RevokeRoleAsync(whiteAlt);
             await member.RevokeRoleAsync(greenAlt);
             await member.RevokeRoleAsync(blueAlt);
@@ -252,35 +252,35 @@ namespace tec_xx
             await member.RevokeRoleAsync(blackAlt);
             await member.RevokeRoleAsync(pinkAlt);
             await member.RevokeRoleAsync(purpleAlt);
-      ***REMOVED***
+        }
 
         private async Task ClearPronounsRoles(DiscordMember member)
-        ***REMOVED***
+        {
             await member.RevokeRoleAsync(heHim);
             await member.RevokeRoleAsync(sheHer);
             await member.RevokeRoleAsync(theyThem);
-      ***REMOVED***
+        }
 
         private async Task CheckForNewVideosInPlaylist()
-        ***REMOVED***
+        {
             foreach (string link in playlistLinks)
-            ***REMOVED***
-          ***REMOVED***
-      ***REMOVED***
+            {
+            }
+        }
 
         private async Task OnClientReady(DiscordClient client, GuildCreateEventArgs e)
-        ***REMOVED***
+        {
             //const Int32 bufferSize = 128;
 
             //using (var fileStream = File.OpenRead("PlaylistLinks.txt"))
-            //***REMOVED***
+            //{
             //    using (var streamReader = new StreamReader(fileStream, Encoding.UTF8, true, bufferSize))
-            //    ***REMOVED***
+            //    {
             //        string line;
             //        while ((line = streamReader.ReadLine()) != null)
             //            playlistLinks.Add(line);
-            //  ***REMOVED***
-            //***REMOVED***
+            //    }
+            //}
 
             
 
@@ -319,17 +319,17 @@ namespace tec_xx
             timer.Start();
 
             return;
-      ***REMOVED***
+        }
 
         private async Task SendMainRoleSelectMessage()
-        ***REMOVED***
+        {
             // mr = Shortcut for Main Roles
             var options = new List<DiscordSelectComponentOption>()
-            ***REMOVED***
+            {
                 new DiscordSelectComponentOption("Pill Tossers", "mr_mains", "Dr. Mario mains or secondaries, especially if you use Dr. Mario in tournament.", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":RedVirus:"))),
                 new DiscordSelectComponentOption("Med School Students", "mr_pockets", "Dr. Mario pocket, or otherwise picking up the character.", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":YellowVirus:"))),
                 new DiscordSelectComponentOption("Patients", "mr_visitors", "Non-users and visitors.", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":BlueVirus:")))
-          ***REMOVED***;
+            };
 
             var dropdown = new DiscordSelectComponent("dropdownRoleSelect", null, options, false, 1, 1);
 
@@ -337,18 +337,18 @@ namespace tec_xx
                 .WithContent("In this channel, you may select for a role to represent your usage of Dr. Mario. The roles are as follows:")
                 .AddComponents(dropdown)
                 .SendAsync(flairChannel);
-      ***REMOVED***
+        }
 
         private async Task SendMatchmakingRoleMessage()
-        ***REMOVED***
+        {
             // Mk = Shoidkrtcut for Matchmaking
             var options = new List<DiscordSelectComponentOption>()
-            ***REMOVED***
+            {
                 new DiscordSelectComponentOption("United States/Canada", "mk_northAmerica", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":Fair:"))),
                 new DiscordSelectComponentOption("Europe", "mk_europe", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":Nair:"))),
                 new DiscordSelectComponentOption("Asia/Australia", "mk_asiaAustralia", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":UpSmash:"))),
                 new DiscordSelectComponentOption("South/Central America", "mk_southCentralAmerica", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":Bair:")))
-          ***REMOVED***;
+            };
 
             var dropdown = new DiscordSelectComponent("dropdownMatchmakingRoleSelect", null, options, false, 0, 4);
 
@@ -356,13 +356,13 @@ namespace tec_xx
                 .WithContent("Please select an option if you would like the friendlies role for your region which grants access to #operating-room")
                 .AddComponents(dropdown)
                 .SendAsync(flairChannel);
-      ***REMOVED***
+        }
 
         private async Task SendAltColorRoleMessage()
-        ***REMOVED***
+        {
             // Alt = Shortcut for Alternative Skins
             var options = new List<DiscordSelectComponentOption>()
-            ***REMOVED***
+            {
                 new DiscordSelectComponentOption("Default/White", "alt_white", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":DefaultDoc:"))),
                 new DiscordSelectComponentOption("Green", "alt_green", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":GreenDoc:"))),
                 new DiscordSelectComponentOption("Blue", "alt_blue", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":BlueDoc:"))),
@@ -371,7 +371,7 @@ namespace tec_xx
                 new DiscordSelectComponentOption("Black", "alt_black", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":BlackDoc:"))),
                 new DiscordSelectComponentOption("Pink", "alt_pink", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":PinkDoc:"))),
                 new DiscordSelectComponentOption("Purple", "alt_purple", emoji: new DiscordComponentEmoji(DiscordEmoji.FromName(Client, ":PurpleDoc:")))
-          ***REMOVED***;
+            };
 
             var dropdown = new DiscordSelectComponent("dropdownAltColorRoleSelect", null, options, false, 0, 8);
 
@@ -379,17 +379,17 @@ namespace tec_xx
                 .WithContent("Please select one of these options to receive a color flair for your alt color of choice:")
                 .AddComponents(dropdown)
                 .SendAsync(flairChannel);
-      ***REMOVED***
+        }
 
         private async Task SendPronounsRoleMessage()
-        ***REMOVED***
+        {
             // pr = Shortcut for Pronouns
             var options = new List<DiscordSelectComponentOption>()
-            ***REMOVED***
+            {
                 new DiscordSelectComponentOption("He/Him", "pr_him"),
                 new DiscordSelectComponentOption("She/Her", "pr_her"),
                 new DiscordSelectComponentOption("They/Them", "pr_them")
-          ***REMOVED***;
+            };
 
             var dropdown = new DiscordSelectComponent("dropdownPronounsSelect", null, options, false, 0, 1);
 
@@ -397,10 +397,10 @@ namespace tec_xx
                 .WithContent("You can choose a role with your pronouns here:")
                 .AddComponents(dropdown)
                 .SendAsync(flairChannel);
-      ***REMOVED***
+        }
 
         private async void SetActivityStatus(object source, ElapsedEventArgs e)
-        ***REMOVED***
+        {
             var activity = new DiscordActivity();
 
             var random = new Random();
@@ -410,6 +410,6 @@ namespace tec_xx
             activity.Name = activityMessages[index];
 
             await Client.UpdateStatusAsync(activity);
-      ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+        }
+    }
+}

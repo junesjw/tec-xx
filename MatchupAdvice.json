@@ -1,5 +1,5 @@
 [
-    ***REMOVED***
+    {
         "Character": "banjoandkazooie",
         "Color": "#AF6348",
         "Document": null,
@@ -12,8 +12,8 @@
         "Title": "Banjo & Kazooie",
         "Video": "[Dr. Mario vs. Banjo & Kazooie Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wbQk01GC_CHV-oUTG3_fIE)",
         "WinningStages": "\r\nFinal Destination\r\nBattlefield\r\nYoshi's Story\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "bayonetta",
         "Color": "#1854A4",
         "Document": null,
@@ -26,8 +26,8 @@
         "Title": "Bayonetta",
         "Video": "[Dr. Mario vs. Bayonetta Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9z8xwkTrPWdDwqIBv16Fc6w)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "bowser",
         "Color": "#FFE0A2",
         "Document": null,
@@ -40,8 +40,8 @@
         "Title": "Bowser",
         "Video": "[Dr. Mario vs. Bowser Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xHVpjzIDCBoa-dE1MtwTPS)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "bowserjr",
         "Color": "#FFE0A2",
         "Document": null,
@@ -54,8 +54,8 @@
         "Title": "Bowser Jr.",
         "Video": "[Dr. Mario vs. Bowser Jr. Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zBxVSrRVKaD8XnaERYoTWj)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "byleth",
         "Color": "#286478",
         "Document": null,
@@ -68,8 +68,8 @@
         "Title": "Byleth",
         "Video": "[Dr. Mario vs. Byleth Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yL-zQkYtervCLc_lWj9vwa)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "captainfalcon",
         "Color": "#D84137",
         "Document": null,
@@ -82,8 +82,8 @@
         "Title": "Captain Falcon",
         "Video": "[Dr. Mario vs. Captain Falcon Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wPPr98-d2r0YEZNSNj5vAF)",
         "WinningStages": "\r\nSmall Battlefield\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "cloud",
         "Color": "#D8D17C",
         "Document": null,
@@ -96,8 +96,8 @@
         "Title": "Cloud",
         "Video": "[Dr. Mario vs. Cloud Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9z8_D6GvvOU9vUFEkDuP-7t)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "corrin",
         "Color": "#E2D8D7",
         "Document": null,
@@ -110,8 +110,8 @@
         "Title": "Corrin",
         "Video": "[Dr. Mario vs. Corrin Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wkiA1vjRvLleMSDeBhhcSA)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2\r\nTown & City"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "pit",
         "Color": "#fffdd0",
         "Document": null,
@@ -124,8 +124,8 @@
         "Title": "(Dark) Pit",
         "Video": "[Dr. Mario vs. (Dark) Pit Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zw-xkYznjGl2WrkVm2iTd4)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "samus",
         "Color": "#E42E29",
         "Document": null,
@@ -138,8 +138,8 @@
         "Title": "(Dark) Samus",
         "Video": "[Dr. Mario vs. (Dark) Samus Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wqELS-FqmNYa_42SUAMXdJ)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "diddykong",
         "Color": "#F8C284",
         "Document": null,
@@ -152,8 +152,8 @@
         "Title": "Diddy Kong",
         "Video": "[Dr. Mario vs. Diddy Kong Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yRRaEDc1dZBvvJ7mEpAfJY)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "donkeykong",
         "Color": "#7E3C19",
         "Document": null,
@@ -166,8 +166,8 @@
         "Title": "Donkey Kong",
         "Video": "[Dr. Mario vs. Donkey Kong Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zy2wnjJzzOredXr4Pw5Trf)",
         "WinningStages": "\r\nFinal Destination\r\nBattlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "duckhunt",
         "Color": "#C96A3A",
         "Document": null,
@@ -180,8 +180,8 @@
         "Title": "Duck Hunt",
         "Video": "[Dr. Mario vs. Duck Hunt Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9ynCnnmrhdnHZcDio9aZ0Ss)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story\r\nSmashville\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "falco",
         "Color": "#004DB8",
         "Document": null,
@@ -194,8 +194,8 @@
         "Title": "Falco",
         "Video": "[Dr. Mario vs. Falco Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xj3OLbybbz0c6b32B32XRU)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "fox",
         "Color": "#E9BA6A",
         "Document": null,
@@ -208,8 +208,8 @@
         "Title": "Fox",
         "Video": "[Dr. Mario vs. Fox Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zv7Jo2wZzrn6LUZTlSsRU7)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "ganondorf",
         "Color": "#A9A977",
         "Document": null,
@@ -222,8 +222,8 @@
         "Title": "Ganondorf",
         "Video": "[Dr. Mario vs. Ganondorf Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9z40YinfMFmDMrgnTbI61LL)\r\n[Dr. Mario vs. Ganondorf JMU Crew Battle](https://www.twitch.tv/videos/478893720?filter=all&sort=time)",
         "WinningStages": "\r\nTown & City\r\nKalos"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "greninja",
         "Color": "#0049A2",
         "Document": null,
@@ -236,8 +236,8 @@
         "Title": "Greninja",
         "Video": "[Dr. Mario vs. Greninja Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zdqPKdGoifoLcF0wwUOfxE)",
         "WinningStages": "\r\nFinal Destination\r\nYoshi's Story\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "hero",
         "Color": "#5F4A3F",
         "Document": null,
@@ -250,8 +250,8 @@
         "Title": "Hero",
         "Video": "[Dr. Mario vs. Hero Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xZ2IObPFEp96WKZSiLcU1a)",
         "WinningStages": "\r\nFinal Destination\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "iceclimbers",
         "Color": "#f7f7f7",
         "Document": null,
@@ -264,8 +264,8 @@
         "Title": "Ice Climbers",
         "Video": "[Dr. Mario vs. Ice Climbers Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yGAw5TqZDGnSOtO3r4LXE8)",
         "WinningStages": "\r\nTown & City\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "ike",
         "Color": "#00479F",
         "Document": null,
@@ -278,8 +278,8 @@
         "Title": "Ike",
         "Video": "[Dr. Mario vs. Ike Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xFWT_HMNLBuez8huWxkf-U)",
         "WinningStages": "\r\nFinal Destination\r\nSmall Battlefield\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "incineroar",
         "Color": "#D43823",
         "Document": "[Dr. Mario vs. Incineroar MU Guide](https://docs.google.com/document/d/1p-5v6sMkbWI1KhooJQ4aPZuitDayyVXOuJgv7hKBz44/edit?usp=sharing)",
@@ -292,8 +292,8 @@
         "Title": "Incineroar",
         "Video": "[Dr. Mario vs. Incineroar Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9x5lVy21CEyQ6eJQNliX9bv)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "inkling",
         "Color": "#FF8114",
         "Document": null,
@@ -306,8 +306,8 @@
         "Title": "Inkling ",
         "Video": "[Dr. Mario vs. Inkling Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yM4V6N0gZMyav9PsgQ0HKR)",
         "WinningStages": "\r\nYoshi's Story\r\nBattlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "isabelle",
         "Color": "#FFF68C",
         "Document": null,
@@ -320,8 +320,8 @@
         "Title": "Isabelle",
         "Video": "[Dr. Mario vs. Isabelle Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zaLJtb8fqfUcX0NTyRCWYL)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "jigglypuff",
         "Color": "#F9C5D0",
         "Document": null,
@@ -334,8 +334,8 @@
         "Title": "Jigglypuff",
         "Video": "[Dr. Mario vs. Jigglypuff Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wJCIu85IvJruV89d4Zh5QG)",
         "WinningStages": "\r\nFinal Destination\r\nBattlefield\r\n Yoshi's Story"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "joker",
         "Color": "#0E0E0E",
         "Document": null,
@@ -348,8 +348,8 @@
         "Title": "Joker",
         "Video": "[Dr. Mario vs. Joker Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zzzPD-iTOUz1lPKJFx2gnG)",
         "WinningStages": "\r\nFinal Destination"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "kingdedede",
         "Color": "#FFB500",
         "Document": null,
@@ -362,8 +362,8 @@
         "Title": "King Dedede",
         "Video": "[Dr. Mario vs. King Dedede Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wyFVmvGAIV6oNx37u4PMjM)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story\r\nSmall Battlefield\r\nTown & City"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "kingkrool",
         "Color": "#008F00",
         "Document": "[Dr. Mario vs. King K. Rool MU Guide](https://docs.google.com/document/d/1QJsLmMRKB1gG0I9eSVK9bOFZ3qpumkGFF5QyvCeb9lA/edit?usp=sharing)",
@@ -376,8 +376,8 @@
         "Title": "King K. Rool",
         "Video": "[Dr. Mario vs. King K. Rool Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9y7suoAMzPC8CRUpH_YaMqf)",
         "WinningStages": "\r\nSmall Battlefield\r\nFinal Destination\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "kirby",
         "Color": "#F2A9B2",
         "Document": null,
@@ -390,8 +390,8 @@
         "Title": "Kirby",
         "Video": "[Dr. Mario vs. Kirby Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wFGbJZTg3H7eCfc-b3DI_p)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "link",
         "Color": "#C1AB1B",
         "Document": null,
@@ -404,8 +404,8 @@
         "Title": "Link",
         "Video": "[Dr. Mario vs. Link Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9x21fgrfWw54UZtW0OtbmsA)",
         "WinningStages": "\r\nBattlefield\r\n Yoshi's Story\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "littlemac",
         "Color": "#157615",
         "Document": null,
@@ -418,8 +418,8 @@
         "Title": "Little Mac",
         "Video": "[Dr. Mario vs. Little Mac Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xPzr3idH9_gD7V06jEJzOQ)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nLylat Cruise\r\nKalos"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "lucario",
         "Color": "#00A3E2",
         "Document": null,
@@ -432,8 +432,8 @@
         "Title": "Lucario",
         "Video": "[Dr. Mario vs. Lucario Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zMwqUX8qHryFh_XDfJ2BBy)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "lucas",
         "Color": "#EECA25",
         "Document": null,
@@ -446,8 +446,8 @@
         "Title": "Lucas",
         "Video": "[Dr. Mario vs. Lucas Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xYx46eYwH1MzbKhrVRQdko)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "luigi",
         "Color": "#429738",
         "Document": null,
@@ -460,8 +460,8 @@
         "Title": "Luigi",
         "Video": "[Dr. Mario vs. Luigi Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zWizm8McTLuRPpMZER6z1r)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "mario",
         "Color": "#E72B2D",
         "Document": "[Dr. Mario vs. Mario MU Guide](https://docs.google.com/document/d/17nQjJizoEO8JChADFM9Mzf8yD_skHUeLdN3O6_4gIAw/edit?usp=sharing)",
@@ -474,8 +474,8 @@
         "Title": "Mario",
         "Video": "[Dr. Mario vs. Mario Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xwW4Tod0JUlt1z3Kw69-bj)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "marth",
         "Color": "#2C4A8B",
         "Document": null,
@@ -488,8 +488,8 @@
         "Title": "Marth",
         "Video": "[Dr. Mario vs. Marth (Lucina) Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xcKHwh80BNKDtJ1kV-npQc)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "megaman",
         "Color": "#0372EA",
         "Document": null,
@@ -502,8 +502,8 @@
         "Title": "Mega Man",
         "Video": "[Dr. Mario vs. Mega Man Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yMMSInQTq3GV7y_xtg4BiG)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nFinal Destination"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "metaknight",
         "Color": "#C9CACA",
         "Document": null,
@@ -516,8 +516,8 @@
         "Title": "Meta Knight",
         "Video": "[Dr. Mario vs. Meta Knight Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xY46sJ7jbcnCW4o3w-E2VP)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nFinal Destination\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "mewtwo",
         "Color": "#E6D4E7",
         "Document": null,
@@ -530,8 +530,8 @@
         "Title": "Mewtwo",
         "Video": "[Dr. Mario vs. Mewtwo Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xfotn-9mI5CmRl8maB3wqP)",
         "WinningStages": "\r\nSmashville\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "miibrawler",
         "Color": "#fb3530",
         "Document": null,
@@ -544,8 +544,8 @@
         "Title": "Mii Brawler",
         "Video": "[Dr. Mario vs. Mii Fighter Matchup Playlist](https://youtube.com/playlist?list=PLaVVi_TueS9yr8f0mbJttnbkokAv8yqQO)",
         "WinningStages": "\r\nFinal Destination\r\nTown & City"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "miigunner",
         "Color": "#0463d1",
         "Document": null,
@@ -558,8 +558,8 @@
         "Title": "Mii Gunner",
         "Video": "[Dr. Mario vs. Mii Fighter Matchup Playlist](https://youtube.com/playlist?list=PLaVVi_TueS9yr8f0mbJttnbkokAv8yqQO)",
         "WinningStages": null
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "miiswordfighter",
         "Color": "#dddddc",
         "Document": null,
@@ -572,8 +572,8 @@
         "Title": "Mii Swordfighter",
         "Video": "[Dr. Mario vs. Mii Fighter Matchup Playlist](https://youtube.com/playlist?list=PLaVVi_TueS9yr8f0mbJttnbkokAv8yqQO)",
         "WinningStages": null
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "minmin",
         "Color": "#F2421A",
         "Document": null,
@@ -586,8 +586,8 @@
         "Title": "Min Min",
         "Video": "[Dr. Mario vs. Min Min Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wbRmx0hgopu8NNUnwQav0H)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "mrgameandwatch",
         "Color": "#000000",
         "Document": null,
@@ -600,8 +600,8 @@
         "Title": "Mr. Game & Watch",
         "Video": "[Dr. Mario vs. Mr. Game & Watch Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yH_DQEjqHgHeYbSRpHyeKn)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nFinal Destination"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "mythra",
         "Color": "#ebba59",
         "Document": null,
@@ -614,8 +614,8 @@
         "Title": "Mythra",
         "Video": "[Dr. Mario vs. Mythra/Pyra Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9x7opbfI4Zu6mpolX2FJGnJ)",
         "WinningStages": null
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "ness",
         "Color": "#FF2621",
         "Document": null,
@@ -628,8 +628,8 @@
         "Title": "Ness",
         "Video": "[Dr. Mario vs. Ness Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xW-I7niXiVMjVuu8HDcTVK)",
         "WinningStages": "\r\nLylat Cruise\r\nFinal Destination"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "olimar",
         "Color": "#FFE4C5",
         "Document": null,
@@ -642,8 +642,8 @@
         "Title": "Olimar",
         "Video": "[Dr. Mario vs. Olimar Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xMZ9qbDYSdB6wUemVag5uB)",
         "WinningStages": "\r\nSmall Battlefield\r\nFinal Destination"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "pacman",
         "Color": "#FFFF00",
         "Document": null,
@@ -656,8 +656,8 @@
         "Title": "Pac-Man",
         "Video": "[Dr. Mario vs. Pac-Man Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wBGTjUFuDK34wwGha6bNbC)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "palutena",
         "Color": "#3EC400",
         "Document": null,
@@ -670,8 +670,8 @@
         "Title": "Palutena",
         "Video": "[Dr. Mario vs. Palutena Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yJpZm-SIBasJx_2BDKTrMn)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "peach",
         "Color": "#FFF2E9",
         "Document": null,
@@ -684,8 +684,8 @@
         "Title": "Peach",
         "Video": "[Dr. Mario vs. Peach (Daisy) Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zrsY4FMe7iHZ40p-aMFoy4)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "pichu",
         "Color": "#FFF362",
         "Document": null,
@@ -698,8 +698,8 @@
         "Title": "Pichu",
         "Video": "[Dr. Mario vs. Pichu Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9x2VrRcrWDpZ9VCUqMYuMEH)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nFinal Destination"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "pikachu",
         "Color": "#F3D823",
         "Document": null,
@@ -712,8 +712,8 @@
         "Title": "Pikachu",
         "Video": "[Dr. Mario vs. Pikachu Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yIJG5ASCroKl1TpmxjU7b9)",
         "WinningStages": "\r\nPokemon Stadium 2\r\nBattlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "piranhaplant",
         "Color": "#FF0000",
         "Document": null,
@@ -726,8 +726,8 @@
         "Title": "Piranha Plant",
         "Video": "[Dr. Mario vs. Piranha Plant Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zDeILF2W4eR9MO8-k9WTWu)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "pokemontrainer",
         "Color": "#EFEFEF",
         "Document": null,
@@ -740,8 +740,8 @@
         "Title": "Pokémon Trainer",
         "Video": "[Dr. Mario vs. Pokémon Trainer Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yLXk8a9iJPp8U65ztzeWR-)",
         "WinningStages": "\r\nFinal Destination"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "pyra",
         "Color": "#ebba59",
         "Document": null,
@@ -754,8 +754,8 @@
         "Title": "Pyra",
         "Video": "[Dr. Mario vs. Mythra/Pyra Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9x7opbfI4Zu6mpolX2FJGnJ)",
         "WinningStages": null
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "rob",
         "Color": "#F4EFDD",
         "Document": null,
@@ -768,8 +768,8 @@
         "Title": "R.O.B",
         "Video": "[Dr. Mario vs. R.O.B. Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xebkr4OUquWjjnQmO5RrgW)",
         "WinningStages": "\r\nFinal Destination\r\nBattlefield\r\nYoshi's Story"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "ridley",
         "Color": "#636DA8",
         "Document": "[Dr. Mario vs. Ridley MU Guide](https://docs.google.com/document/d/1ohuN9NhXVPu4uKD3upXdVXIlyeMiyO4zH7NsBHDicLs/edit?usp=sharing)",
@@ -782,8 +782,8 @@
         "Title": "Ridley",
         "Video": "[Dr. Mario vs. Ridley Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wz6PJ88RfwJEGYzNnQ6U3i)",
         "WinningStages": "\r\nFinal Destination\r\nTown & City"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "robin",
         "Color": "#CCCCD6",
         "Document": null,
@@ -796,8 +796,8 @@
         "Title": "Robin",
         "Video": "[Dr. Mario vs. Robin Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xCRA8xJnyRT0LQpQ2-YwkV)",
         "WinningStages": "\r\nLylat Cruise\r\nBattlefield\r\nYoshi's Story"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "rosalinaluma",
         "Color": "#3CC9FC",
         "Document": null,
@@ -810,8 +810,8 @@
         "Title": "Rosalina",
         "Video": "[Dr. Mario vs. Rosalina & Luma Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zQD1a14qsFwDJbin7Oau2S)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "roy",
         "Color": "#3CC9FC",
         "Document": null,
@@ -824,8 +824,8 @@
         "Title": "Roy",
         "Video": "[Dr. Mario vs. Roy (Chrom) Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yyaRNEso7CY8olGSk-235t)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "ryu",
         "Color": "#1B040F",
         "Document": null,
@@ -838,8 +838,8 @@
         "Title": "Ryu",
         "Video": "[Dr. Mario vs. Ryu (Ken) Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9ykm6QK_L3_-2vz0jF7QpB0)",
         "WinningStages": "\r\nFinal Destination\r\nBattlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "sephiroth",
         "Color": "#C0C0C0",
         "Document": null,
@@ -852,8 +852,8 @@
         "Title": "Sephiroth",
         "Video": "[Dr. Mario vs. Sephiroth Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wIxdnzfPyKt7q6bppeV_6F)",
         "WinningStages": "\r\nFinal Destination\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "sheik",
         "Color": "#C8C9CA",
         "Document": null,
@@ -866,8 +866,8 @@
         "Title": "Sheik",
         "Video": "[Dr. Mario vs. Sheik Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9waGVCKHZDDpjaJvV4R3-E6)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "shulk",
         "Color": "#F3E6D4",
         "Document": null,
@@ -880,8 +880,8 @@
         "Title": "Shulk",
         "Video": "[Dr. Mario vs. Shulk Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9y6YIipC3ATtZAKjPiarx6Q)",
         "WinningStages": "\r\nFinal Destination\r\nTown & City"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "simon",
         "Color": "#D4B700",
         "Document": null,
@@ -894,8 +894,8 @@
         "Title": "Simon",
         "Video": "[Dr. Mario vs. Simon Belmont (Richter) Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9whYMVbzdf-XSXC2orpLnwt)\r\n[Dr. Mario vs. Simon Belmont (Richter) JMU Crew Battle](https://www.twitch.tv/videos/733486390)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "snake",
         "Color": "#898989",
         "Document": null,
@@ -908,8 +908,8 @@
         "Title": "Snake",
         "Video": "[Dr. Mario vs. Snake Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9x6m2C5qzi0ijS3v8FJV-3y)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "sonic",
         "Color": "#0526D2",
         "Document": null,
@@ -922,8 +922,8 @@
         "Title": "Sonic",
         "Video": "[Dr. Mario vs. Sonic Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9x0vpz9eDqpNIDf6CbYlR_y)",
         "WinningStages": "\r\nSmashville\r\nLylat Cruise\r\nYoshi's Story"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "steve",
         "Color": "#B99279",
         "Document": null,
@@ -936,8 +936,8 @@
         "Title": "Steve",
         "Video": "[Dr. Mario vs. Steve Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9ypTTdZM7sEjCc56HFwvu-U)",
         "WinningStages": "\r\nYoshi's Story\r\nSmashville\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "terry",
         "Color": "#EE0000",
         "Document": null,
@@ -950,8 +950,8 @@
         "Title": "Terry",
         "Video": "[Dr. Mario vs. Terry Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zmt5ASAAPFSwzwCgwUlvhz)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "toonlink",
         "Color": "#EFEFEF",
         "Document": null,
@@ -964,8 +964,8 @@
         "Title": "Toon Link",
         "Video": "[Dr. Mario vs. Toon Link Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wuBcchhovUiC7yuP5ug0PV)",
         "WinningStages": "\r\nFinal Destination\r\nLylat Cruise"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "villager",
         "Color": "#FDA65D",
         "Document": null,
@@ -978,8 +978,8 @@
         "Title": "Villager",
         "Video": "[Dr. Mario vs. Villager Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yk8ImFtc8zTHw4B83KMzrm)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "wario",
         "Color": "#F9D6AA",
         "Document": null,
@@ -992,8 +992,8 @@
         "Title": "Wario",
         "Video": "[Dr. Mario vs. Wario Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9wPr0MdVzSO8TmVyuNSVjnZ)",
         "WinningStages": "\r\nFinal Destination\r\nTown & City\r\nPokemon Stadium 2"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "wiifittrainer",
         "Color": "#DEDEDE",
         "Document": null,
@@ -1006,8 +1006,8 @@
         "Title": "Wii Fit Trainer",
         "Video": "[Dr. Mario vs. Wii Fit Trainer Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xGVCH6cjK_cjlUGuAGD5B2)",
         "WinningStages": "\r\nFinal Destination\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "wolf",
         "Color": "#B1AFCB",
         "Document": null,
@@ -1020,8 +1020,8 @@
         "Title": "Wolf",
         "Video": "[Dr. Mario vs. Wolf Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9zxOfRc1LGtTgyEl2G2aKll)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2\r\nSmall Battlefield"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "yoshi",
         "Color": "#5DB432",
         "Document": null,
@@ -1034,8 +1034,8 @@
         "Title": "Yoshi",
         "Video": "[Dr. Mario vs. Yoshi Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yiyxtR0voDN5XZUPfC4VuS)",
         "WinningStages": "\r\nSmashville\r\nYoshi's Story\r\nFinal Destination"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "younglink",
         "Color": "#00AE44",
         "Document": null,
@@ -1048,8 +1048,8 @@
         "Title": "Young Link",
         "Video": "[Dr. Mario vs. Young Link Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9yszBcGJ-nkJ6MfUgcOz6W2)",
         "WinningStages": "\r\nBattlefield\r\nYoshi's Story\r\nSmashville"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "zelda",
         "Color": "#EFE036",
         "Document": null,
@@ -1062,8 +1062,8 @@
         "Title": "Zelda",
         "Video": "[Dr. Mario vs. Zelda Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9w3JUIfv9pUDOv4ZzQMMAgM)",
         "WinningStages": "\r\nFinal Destination\r\nTown & City\r\nKalos"
-  ***REMOVED***,
-    ***REMOVED***
+    },
+    {
         "Character": "zerosuitsamus",
         "Color": "#0463D1",
         "Document": null,
@@ -1076,5 +1076,5 @@
         "Title": "Zero Suit Samus",
         "Video": "[Dr. Mario vs. Zero Suit Samus Matchup Playlist](https://www.youtube.com/playlist?list=PLaVVi_TueS9xhB81fuO35tV9avXxTOC8M)",
         "WinningStages": "\r\nFinal Destination\r\nPokemon Stadium 2\r\nSmall Battlefield"
-  ***REMOVED***
+    }
 ]

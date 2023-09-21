@@ -13,9 +13,9 @@ using DSharpPlus.Exceptions;
 using DSharpPlus.EventArgs;
 
 namespace tec_xx.Commands
-***REMOVED***
+{
     public class CharacterCommands : BaseCommandModule
-    ***REMOVED***
+    {
         private const string author = "This bot was created by Junes#9469";
         private const string docHeadUrl = "https://www.ssbwiki.com/images/c/c8/DrMarioHeadSSBUWebsite.png";
         private const string docStop = "https://docs.google.com/spreadsheets/d/1f00Ph9bDgF5Nc0GFokGsmuTsRUnBmLRj8aN-yeXPy4g/edit?usp=sharing";
@@ -24,9 +24,9 @@ namespace tec_xx.Commands
 
         [Command("vs")]
         public async Task SendMatchUpTips(CommandContext ctx, string character)
-        ***REMOVED***
+        {
             try
-            ***REMOVED***
+            {
                 var headIconFileName = new List<string>();
                 var advice = new MatchupAdvice();
                 var alias = new Aliases();
@@ -39,24 +39,24 @@ namespace tec_xx.Commands
                 advice = advices.Find(x => x.Character == character);
 
                 if (advice == null)
-                ***REMOVED***
+                {
                     alias = aliases.Find(x => x.Alias == character);
 
                     if (alias != null)
-                    ***REMOVED***
+                    {
                         advice = advices.Find(x => x.Character == alias.Character);
                         character = advice.Character;
-                  ***REMOVED***
+                    }
                     else
-                    ***REMOVED***
+                    {
                         var msg = new DiscordMessageBuilder()
-                            .WithContent($"You didn't enter a valid character argument. \n For a comprehensive list about all character commands, please see this ***REMOVED***pastebin***REMOVED*** link.")
+                            .WithContent($"You didn't enter a valid character argument. \n For a comprehensive list about all character commands, please see this {pastebin} link.")
                             .SendAsync(ctx.Channel);
 
                         return;
-                  ***REMOVED***
+                    }
 
-              ***REMOVED***
+                }
 
                 string headIconDirectory = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "HeadIcons");
 
@@ -64,53 +64,53 @@ namespace tec_xx.Commands
 
                 // Robin already contains the word "rob"
                 if (string.Equals(character, "rob"))
-                ***REMOVED***
+                {
                     headIconFileName.Add(string.Concat(headIconDirectory, @"/ROBHeadSSBUWebsite.png"));
-              ***REMOVED***
+                }
                 else if (string.Equals(character, "samus"))
-                ***REMOVED***
+                {
                     headIconFileName.Add(string.Concat(headIconDirectory, @"/SamusHeadSSBUWebsite.png"));
-              ***REMOVED***
+                }
                 else if (string.Equals(character, "falco"))
-                ***REMOVED***
+                {
                     headIconFileName.Add(string.Concat(headIconDirectory, @"/FalcoHeadSSBUWebsite.png"));
-              ***REMOVED***
+                }
                 else if (string.Equals(character, "bowser"))
-                ***REMOVED***
+                {
                     headIconFileName.Add(string.Concat(headIconDirectory, @"/BowserHeadSSBUWebsite.png"));
 
-              ***REMOVED***
+                }
                 else
-                ***REMOVED***
+                {
                     headIconFileName = Directory.GetFiles(headIconDirectory).Where(s => s.ToLower().Contains(character)).ToList();
-              ***REMOVED***
+                }
 
                 using (var fs = new FileStream(headIconFileName[0], FileMode.Open))
-                ***REMOVED***
+                {
                     var embed = new DiscordEmbedBuilder
-                    ***REMOVED***
-                        Title = $"Dr. Mario vs. ***REMOVED***advice.Title***REMOVED***",
+                    {
+                        Title = $"Dr. Mario vs. {advice.Title}",
                         Url = docStop,
                         Author = new DiscordEmbedBuilder.EmbedAuthor
-                        ***REMOVED***
+                        {
                             IconUrl = docHeadUrl,
                             Name = author
-                      ***REMOVED***,
+                        },
                         Footer = new DiscordEmbedBuilder.EmbedFooter
-                        ***REMOVED***
+                        {
                             IconUrl = docHeadUrl,
                             Text = footer
-                      ***REMOVED***,
+                        },
                         Thumbnail = new DiscordEmbedBuilder.EmbedThumbnail
-                        ***REMOVED***
-                            Url = $"attachment://***REMOVED***Path.GetFileName(headIconFileName[0])***REMOVED***"
-                      ***REMOVED***,
+                        {
+                            Url = $"attachment://{Path.GetFileName(headIconFileName[0])}"
+                        },
 
                         Color = new Optional<DiscordColor>(new DiscordColor(advice.Color)),
-                  ***REMOVED***;
+                    };
 
                     if (!string.IsNullOrEmpty(advice.SecondaryNotes))
-                    ***REMOVED***
+                    {
                         string[] notesTitles = ReturnNotesTitle(advice);
 
                         embed.AddField(notesTitles[0], BuildNotes(advice));
@@ -119,11 +119,11 @@ namespace tec_xx.Commands
 
                         if (!string.IsNullOrEmpty(advice.TertiaryNotes))
                             embed.AddField(notesTitles[2], string.Concat("```\n", advice.TertiaryNotes, "```"));
-                  ***REMOVED***
+                    }
                     else
-                    ***REMOVED***
+                    {
                         embed.AddField("Notes", BuildNotes(advice));
-                  ***REMOVED***
+                    }
 
                     embed.AddField("Stages (ordered from best to worst)", BuildStages(advice));
                     embed.AddField("Documents", BuildOtherFields(advice.Document));
@@ -132,97 +132,97 @@ namespace tec_xx.Commands
 
                     var msg = await new DiscordMessageBuilder()
                             .WithEmbed(embed)
-                            .WithFiles(new Dictionary<string, Stream>() ***REMOVED*** ***REMOVED*** $"***REMOVED***Path.GetFileName(headIconFileName[0])***REMOVED***", fs ***REMOVED*** ***REMOVED***)
+                            .WithFiles(new Dictionary<string, Stream>() { { $"{Path.GetFileName(headIconFileName[0])}", fs } })
                             .SendAsync(ctx.Channel);
-              ***REMOVED***
-          ***REMOVED***
+                }
+            }
             catch (Exception e)
-            ***REMOVED***
+            {
                 Console.WriteLine(e);
-          ***REMOVED***
+            }
 
-      ***REMOVED***
+        }
 
         private static string BuildNotes(MatchupAdvice notes)
-        ***REMOVED***
+        {
             var sb = new StringBuilder("```");
 
             if (!string.IsNullOrEmpty(notes.PrimaryNotes))
-            ***REMOVED***
+            {
                 sb.Append(notes.PrimaryNotes);
-          ***REMOVED***
+            }
             else
-            ***REMOVED***
+            {
                 return "---WORK IN PROGRESS---";
-          ***REMOVED***
+            }
 
             sb.Append("```");
 
             return sb.ToString();
-      ***REMOVED***
+        }
 
         private static string BuildStages(MatchupAdvice stages)
-        ***REMOVED***
+        {
             if (!string.IsNullOrEmpty(stages.WinningStages))
-            ***REMOVED***
+            {
                 return string.Concat("```", stages.WinningStages, "\n", stages.NeutralStages, stages.LosingStages, "```");
-          ***REMOVED***
+            }
             else
-            ***REMOVED***
+            {
                 return "```/```";
-          ***REMOVED***
-      ***REMOVED***
+            }
+        }
 
         private static string BuildOtherFields(string txt)
-        ***REMOVED***
+        {
             if (!string.IsNullOrEmpty(txt))
-            ***REMOVED***
+            {
                 return txt;
-          ***REMOVED***
+            }
             else
-            ***REMOVED***
+            {
                 return "/";
-          ***REMOVED***
-      ***REMOVED***
+            }
+        }
 
         private static string[] ReturnNotesTitle(MatchupAdvice advice)
-        ***REMOVED***
+        {
             switch (advice.Title)
-            ***REMOVED***
+            {
                 case "(Dark) Pit":
-                    return new string[] ***REMOVED*** "Pit", "Dark Pit" ***REMOVED***;
+                    return new string[] { "Pit", "Dark Pit" };
 
                 case "Pokémon Trainer":
-                    return new string[] ***REMOVED*** "Squirtle", "Ivysaur", "Charizard" ***REMOVED***;
+                    return new string[] { "Squirtle", "Ivysaur", "Charizard" };
 
                 case "Ryu":
-                    return new string[] ***REMOVED*** "Ryu", "Ken" ***REMOVED***;
+                    return new string[] { "Ryu", "Ken" };
 
                 default:
-                    return new string[] ***REMOVED*** " -Unknown " ***REMOVED***;
-          ***REMOVED***
-      ***REMOVED***
-  ***REMOVED***
+                    return new string[] { " -Unknown " };
+            }
+        }
+    }
 
     public class MatchupAdvice
-    ***REMOVED***
-        public string Character ***REMOVED*** get; set; ***REMOVED***
-        public string Color ***REMOVED*** get; set; ***REMOVED***
-        public string Document ***REMOVED*** get; set; ***REMOVED***
-        public string Video ***REMOVED*** get; set; ***REMOVED***
-        public string WinningStages ***REMOVED*** get; set; ***REMOVED***
-        public string NeutralStages ***REMOVED*** get; set; ***REMOVED***
-        public string LosingStages ***REMOVED*** get; set; ***REMOVED***
-        public string Other ***REMOVED*** get; set; ***REMOVED***
-        public string PrimaryNotes ***REMOVED*** get; set; ***REMOVED***
-        public string SecondaryNotes ***REMOVED*** get; set; ***REMOVED***
-        public string TertiaryNotes ***REMOVED*** get; set; ***REMOVED***
-        public string Title ***REMOVED*** get; set; ***REMOVED***
-  ***REMOVED***
+    {
+        public string Character { get; set; }
+        public string Color { get; set; }
+        public string Document { get; set; }
+        public string Video { get; set; }
+        public string WinningStages { get; set; }
+        public string NeutralStages { get; set; }
+        public string LosingStages { get; set; }
+        public string Other { get; set; }
+        public string PrimaryNotes { get; set; }
+        public string SecondaryNotes { get; set; }
+        public string TertiaryNotes { get; set; }
+        public string Title { get; set; }
+    }
 
     public class Aliases
-    ***REMOVED***
-        public string Alias ***REMOVED*** get; set; ***REMOVED***
-        public string Character ***REMOVED*** get; set; ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    {
+        public string Alias { get; set; }
+        public string Character { get; set; }
+    }
+}

@@ -1,7 +1,7 @@
-***REMOVED***
-  "token": "NzQ0Njc3MDMzMDc3ODk5MzA0.XzmsiA.UhApuHcejR7HXqBPny74sdFewwA",
-***REMOVED***
-  "ConnectionStrings": ***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+{
+  "token": "",
+  "prefix": "%",
+  "ConnectionStrings": {
+    "Default":  "Data Source = .\\tec-xx.db;Version=3"
+  }
+}
