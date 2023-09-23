@@ -3,3 +3,5 @@ services:
   bot:
     build: .
     image: mydiscordbot
+    environment:
+     - DISCORD_TOKEN=${DISCORD_TOKEN}

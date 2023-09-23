@@ -1,5 +1,4 @@
 {
-  "token": "",
   "prefix": "%",
   "ConnectionStrings": {
     "Default":  "Data Source = .\\tec-xx.db;Version=3"

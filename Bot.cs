@@ -66,10 +66,17 @@ namespace tec_xx
 
             var configJson = JsonConvert.DeserializeObject<ConfigJson>(json);
 
+            string discordToken = Environment.GetEnvironmentVariable("DISCORD_TOKEN");
+
+            if (string.IsNullOrEmpty(discordToken))
+            {
+                throw new InvalidOperationException("Discord token is not set in the environment variables!");
+            }
+
             var config = new DiscordConfiguration
             {
                 Intents = DiscordIntents.All,
-                Token = configJson.Token,
+                Token = discordToken,
                 TokenType = TokenType.Bot,
                 AutoReconnect = true,
                 MinimumLogLevel = Microsoft.Extensions.Logging.LogLevel.Debug,
